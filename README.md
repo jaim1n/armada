@@ -28,7 +28,7 @@ I will most likely accept any pull requests as long they don't break anything.
 | iPod touch (3rd generation) | 4.3           |
 
 ## TODO
-- [ ] Create a cool logo.
+- [x] Create a cool logo.
 - [ ] Finish support for iOS 5.
   - [ ] Remount filesystem as read/write.
   - [ ] Get shellcode.
