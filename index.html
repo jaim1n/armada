@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>armada</title>
     <style>
@@ -68,6 +68,14 @@
         };
     </script>
     <div>
+        <script type="text/javascript">
+            //This function is called when the users presses the start button
+            var go = function() {
+                clear_callback();
+                console.log('[WebsploitFramework][Main]: '+'Starting...');
+                if(!sploit_main()) vm_wenetakid_prot(); 
+            };
+        </script>
         <h1>armada</h1>
         <p id='support'>remote jailbreak tool for iOS 4 - 12.1.1, with some exceptions</p>
         <i style="font-size: 13px !important;">9.3.5 - 9.3.6 (32-bit), <a href="itms-services://?action=download-manifest&url=https://jaimin.xyz/armada/manifest.plist">tap here</a></i>
