@@ -66,6 +66,7 @@ I'll most likely accept any pull requests so long as they don't break anything.
 - iPhone 4 (CDMA)
 
 ## TODO
+- [ ] Create a cool logo.
 - [ ] Finish support for iOS 5.
   - [ ] Remount filesystem as read/write.
   - [ ] Get shellcode.
