@@ -54,3 +54,4 @@ I will most likely accept any pull requests as long they don't break anything.
 - Sem Voigtländer
 - wwwtyro
 - Siguza
+- LinusHenze
