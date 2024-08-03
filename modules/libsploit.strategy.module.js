@@ -34,7 +34,7 @@ module('liblogging'); //for verbosity functionality
 
 //Configures the maximum supported operating system version or safari version
 var MAX_SUPPORT = {
-    os: 11.31,
+    os: 12.01,
     safari: 604.1
 };
 
@@ -69,7 +69,7 @@ function supported_osversion() {
 //returns whether the exploit needs offsets for the client device
 function needs_offsets() {
     var device = current_device();
-    return device.OSVersion >= 10;
+    return device.OSVersion >= 10 && device.OSVersion <= 12.01;
 }
 
 //returns whether the model and os version of the client were recognized
@@ -197,6 +197,57 @@ function strategy_select() {
             return false;
         }
     }
+    else if(osversion_between(11.41,11.41)) {
+         //We firstly need to check if the client's device model is of one that this strategy supports
+        var supported_devices = ["iPhone 5S", "iPhone 6", "iPhone SE", "iPhone 7+"];
+        var supported = false;
+
+        if(!device.ProductName) return false; //Sanity check making sure to only continue if the product name of the device was detected
+        
+        //The productname detection may return multiple results.
+        //Check each individual entry against the supported devices array and stop the search when a supported device is found.
+        for(var i = 0; i < supported_devices.length && supported == false; i++) {
+            supported = device.ProductName.indexOf(supported_devices[i]) > -1;
+        }
+
+        if(supported) {
+            
+            puts('Chose Kuduma\'s jailbreakme');
+            include('libsploit.ios.1141'); //include the strategy module
+            start_strategy('wk1141go'); //schedule the strategy for launch
+            return true;
+
+        } else {
+            puts('Your '+(device.ProductName ? device.ProductName.join(' or ') : 'Unknown device') + " is not supported"); //There is no exploit available for the client's device
+            return false;
+        }
+    }
+    else if(osversion_between(12.0, 12.01)){
+
+         //We firstly need to check if the client's device model is of one that this strategy supports
+        var supported_devices = ["iPhone 6S", "iPhone SE", "iPhone 8+"];
+        var supported = false;
+
+        if(!device.ProductName) return false; //Sanity check making sure to only continue if the product name of the device was detected
+
+        //The productname detection may return multiple results.
+        //Check each individual entry against the supported devices array and stop the search when a supported device is found.
+        for(var i = 0; i < supported_devices.length && supported == false; i++) {
+            supported = device.ProductName.indexOf(supported_devices[i]) > -1;
+        }
+        
+        if(supported) {
+            
+            puts('Chose Kuduma\'s jailbreakme');
+            include('libsploit.ios.1201'); //include the strategy module
+            start_strategy('wk1201go'); //schedule the strategy for launch
+            return true;
+
+        } else {
+            puts('Your '+(device.ProductName ? device.ProductName.join(' or ') : 'Unknown device') + " is not supported"); //There is no exploit available for the client's device
+            return false;
+        }
+    }
     return false;
 }
 
@@ -225,11 +276,11 @@ function sploit_main() {
             }
 
         } catch(exc) {
-           alert("Exploit failed: "+exc.stack); //The exception occurred in the exploit, show the user a stack-trace
+           alert('Exploit failed: \n\nStack trace: \n\n'+exc.stack+'\n\nReason:'+exc.message); //The exception occurred in the exploit, show the user a stack-trace
         }
 
     } catch(exc) {
-        alert('Exception occured: '+exc.stack); //An unknown exception occured in the program, show the user a stack-trace
+        alert('Exception occured:\n\nStack trace: \n\n'+exc.stack+'\n\nReason:'+exc.message); //An unknown exception occured in the program, show the user a stack-trace
     }
 
     return true;
