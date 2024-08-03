@@ -29,6 +29,7 @@ I will most likely accept any pull requests as long they don't break anything.
 
 ## TODO
 - [x] Create a cool logo.
+- [ ] Organize this mess.
 - [ ] Finish support for iOS 5.
   - [ ] Remount filesystem as read/write.
   - [ ] Get shellcode.
