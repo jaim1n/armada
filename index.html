@@ -201,8 +201,11 @@
         <p id='support'>supports: <i>iOS 4 - 12.0.1, with some exceptions</i></p>
         <i style="font-size: 13px !important;">9.3.5 - 9.3.6 (32-bit), <a href="itms-services://?action=download-manifest&url=https://jaimin.xyz/armada/manifest.plist">tap here</a></i>
     </div>
-    <main>
-        <a class="go" href="#busy" id="go" onclick="go(this);">jailbreak<noscript>javascript must be enabled</noscript></a>
-    </main>
+    <footer>
+        <section>
+            <!-- The element below is used for starting jailbreakme, it can be used in two ways: by clicking it (onclick) and by sliding it (onchange) -->
+            <input onclick="this.value=1;go(this)" id="slidetounlock" type="range" value="0" max="1" placeholder="slide to jailbreak" onchange="go(this)">
+        </section>
+    </footer>
 </body>
 </html>
