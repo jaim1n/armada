@@ -1,47 +1,46 @@
 * {
-	font-family: monospace, Arial, sans-serif;
-	font-size: 36px;
+    font-family: monospace, Arial, sans-serif;
+    font-size: 36px;
+    box-sizing: border-box;
 }
 
 body, html {
- 	background: #000000;
- 	margin: 0;
- 	padding: 0;
- 	font-size: 16px;
- 	width: 100%;
- 	height: 100%;
- 	color: white;
-	overflow: hidden;
- }
+    background: #000000;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+}
 
 header {
-	padding-top: 25px;
-	text-align: center;
-	font-size: 42px;
-	font-weight: bold;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
 }
 
 main {
-	width: 100%;
-	text-align: center;
-	padding-top: 25%;
+    width: 100%;
+    text-align: center;
+    padding-top: 25%;
+    box-sizing: border-box;
 }
 
 .go {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	min-width: 50px;
-	max-width: 90%;
-	background: rgba(252, 252, 252, 0.7);
-}
-
-.go, .go * {
-	text-align: center;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 15px !important;
-	border-radius: 7px;
-	color: purple;
-	display: inline-block;
-	box-decoration-break: slice;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 50px;
+    max-width: 90%;
+    background: rgba(252, 252, 252, 0.7);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px !important;
+    border-radius: 7px;
+    color: purple;
+    display: inline-block;
+    box-decoration-break: slice;
 }
