@@ -1,6 +1,7 @@
 * {
     font-family: monospace, Arial, sans-serif;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body, html {
@@ -22,15 +23,9 @@ main {
 }
 
 .go {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    min-width: 50px;
-    max-width: 90%;
-    text-align: center;
-    text-decoration: none;
+    padding-top: 30px;
     font-weight: bold;
     font-size: 15px !important;
-    border-radius: 7px;
     display: inline-block;
     box-decoration-break: slice;
 }
