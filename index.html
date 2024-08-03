@@ -160,19 +160,12 @@
 </head>
 <body>
     <script type="text/javascript">
-        //Wrapper for the Jailbreakme.go function in a bit more high level. The input element calls this
-        var go = function(sender)
-        {
-            var ret = false;
-            try {
-                ret = Jailbreakme.go(sender);
-            } catch(exc)
-            {
-                puts("Something went wrong during the exploit<br>Reason:<br>"+exc);
-                ret = false;
-            }
-            return ret;
-        };
+        //This function is called when the users presses the start button
+	var go = function() {
+	clear_callback();
+	console.log('[WebsploitFramework][Main]: '+'Starting...');
+	if(!sploit_main()) vm_wenetakid_prot(); 
+	};
     </script>
     <div>
         <h1>armada</h1>
