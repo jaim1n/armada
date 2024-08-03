@@ -11,15 +11,8 @@ body, html {
     font-size: 16px;
     width: 100%;
     height: 100%;
-    color: white;
     overflow: hidden;
-}
-
-header {
-    padding-top: 25px;
-    text-align: center;
-    font-size: 42px;
-    font-weight: bold;
+    color: white;
 }
 
 main {
@@ -40,7 +33,6 @@ main {
     font-weight: bold;
     font-size: 15px !important;
     border-radius: 7px;
-    color: purple;
     display: inline-block;
     box-decoration-break: slice;
 }
