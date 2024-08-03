@@ -63,6 +63,9 @@ An open-source jailbreaking tool for multiple iOS devices and versions.
 
 ## TODO
 - [ ] Finish support for iOS 5.
+  - [ ] Remount filesystem as read/write.
+  - [ ] Get shellcode.
+- [ ] Add support for iOS 6.
 - [ ] Write command-line interface.
 
 #### Credits
