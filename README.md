@@ -83,3 +83,4 @@ An open-source jailbreaking tool for multiple iOS devices and versions.
 - lokihardt
 - Sem Voigtländer
 - wwwtyro
+- Siguza
