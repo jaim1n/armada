@@ -98,7 +98,6 @@
             //We call the above initialization methods
             try {
                 load_modules();
-                update_wallpaper();
                 init_log();
                 init_crash_watchdog(); 
             } 
@@ -203,7 +202,7 @@
         <br><i style="font-size: 13px !important;">9.3.5 - 9.3.6 (32-bit) <a href="itms-services://?action=download-manifest&url=https://jaimin.xyz/armada/manifest.plist">(click here)</a></i>
     </div>
     <main>
-        <a onclick="this.value=1;go(this)">jailbreak<noscript>javascript must be enabled</noscript></a>
+        <a class="go" href="#busy" id="go" onclick="go(this);">jailbreak<noscript>javascript must be enabled</noscript></a>
     </main>
 </body>
 </html>
