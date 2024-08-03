@@ -1,6 +1,10 @@
 # armada
 An open-source jailbreaking tool for multiple iOS devices and versions.
 
+Mostly just a fork of [Jailbreak Me 13.37](https://github.com/MTJailed/jailbreakme) and [Spawn5](https://github.com/BlekShader/spawn5) that I've decided to finish and add more functionality to since those projects are now defunct. Support will continue until development has completed, and maybe even beyond.
+
+I'll most likely accept any pull requests so long as they don't break anything.
+
 ## Support
 ### 64-bit
 #### 11.3.1
