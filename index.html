@@ -145,14 +145,14 @@
 
                     if(!ret) this.raise_stupidity(); //if the exploit determination failed, then we raise the stupidity of the user
 
-                    sender.value = 0; //reset the sender to it's default value, otherwise a range slider would remain on a slided state.
+                    sender.value = 0; //reset the sender to its default value, otherwise a range slider would remain on a slided state.
 
                     return ret; //return the return value of the exploit
 
-                } else { //whether the value is 0 or higher then 1 we will end up here, on a range slider element a slide event making the value 0 means the user cancelled the exploit
+                } else { //whether the value is 0 or higher than 1 we will end up here, on a range slider element a slide event making the value 0 means the user cancelled the exploit
 
                     var stdout = document.getElementById('status'); //get a reference to the status element, which is our output element
-                    stdout.innerText = "Jailbreak has been canceled."; //update the status notifyinf the user that the exploit's been cancelled
+                    stdout.innerText = "Jailbreak has been canceled."; //update the status notifying the user that the exploit's been canceled
 
                 }
             } else {
@@ -160,7 +160,6 @@
             }
 
         };
-
 
         //__load entry
         window.onload = function() {
@@ -201,7 +200,8 @@
         <i style="font-size: 13px !important;">9.3.5 - 9.3.6 (32-bit), <a href="itms-services://?action=download-manifest&url=https://jaimin.xyz/armada/manifest.plist">tap here</a></i>
     </div>
     <main>
-        <a class="go" href="#busy" id="go" onclick="go();">jailbreak<noscript>javascript must be enabled</noscript></a>
+        <a id="jailbreak-button" class="go" href="#" onclick="go(this); return false;">jailbreak</a>
+        <div id="status"></div>
     </main>
 </body>
 </html>
