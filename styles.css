@@ -1,6 +1,5 @@
 * {
     font-family: monospace, Arial, sans-serif;
-    font-size: 36px;
     box-sizing: border-box;
 }
 
@@ -27,7 +26,6 @@ main {
     padding-bottom: 15px;
     min-width: 50px;
     max-width: 90%;
-    background: rgba(252, 252, 252, 0.7);
     text-align: center;
     text-decoration: none;
     font-weight: bold;
