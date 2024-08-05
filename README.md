@@ -33,6 +33,7 @@ I will most likely accept any pull requests as long they don't break anything.
 - [ ] Finish support for iOS 5.
   - [ ] Remount filesystem as read/write.
   - [ ] Get shellcode.
+- [ ] Finish support for iOS 9.3.5 - 9.3.6.
 - [ ] Add support for iOS 6.
 - [ ] Write command-line interface.
 
