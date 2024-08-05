@@ -1,4 +1,5 @@
-# armada <img src="assets/logo.png" alt="logo" width="150"/>
+# armada <img src="assets/logo.png" alt="logo" width="35"/>
+
 An open-source jailbreaking tool for many iOS devices and versions. Features remote jailbreaks for [all devices currently supported](https://github.com/jaim1n/armada/#support), hosted at [https://jaimin.xyz/armada](https://jaimin.xyz/armada). Will feature a CLI for more versions in the near future (see [TODO](https://github.com/jaim1n/armada/#todo).
 
 Mostly just a fork of [Jailbreak Me 13.37](https://github.com/MTJailed/jailbreakme) and [Spawn5](https://github.com/BlekShader/spawn5) that I've decided to complete and expand upon since those projects are now defunct. Support will continue until development has completed, and maybe even beyond.
